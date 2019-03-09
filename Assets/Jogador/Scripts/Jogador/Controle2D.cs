@@ -103,10 +103,7 @@ namespace Arcaedion.DevDasGalaxias
             // Troca o valor do boolean
             _viradoParaDireita = !_viradoParaDireita;
 
-            // Multiplicar a escala local do jogador por -1 faz sempre com que ele gire 
-            Vector3 theScale = transform.localScale;
-            theScale.x *= -1;
-            transform.localScale = theScale;
+            transform.Rotate(0f, 180f, 0f);
         }
     }
 }
